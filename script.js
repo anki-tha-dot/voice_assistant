@@ -58,9 +58,18 @@ function speak(text) {
             reply = "I am doing great!";
         }
         else if (text.includes("open youtube")) {
-            window.open("https://www.youtube.com");
+         window.location.href = "https://www.youtube.com";
             reply = "Opening YouTube";
         }
+            else if (text.includes("open google")) {
+         window.location.href = "https://www.google.com";
+            reply = "Opening google";
+        }
+                else if (text.includes("open whatsapp")) {
+         window.location.href = "https://www.whatsapp.com";
+            reply = "Opening whatsapp";
+        }
+          
         else {
             reply = "Sorry, I didn't understand";
         }
