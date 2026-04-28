@@ -14,14 +14,14 @@ function startListening() {
     recognition.start();
 
     recognition.onstart = function () {
-        output.innerText = "🎤 Listening...";
-    };
+    output.innerText = "🧠 Live Command Center: Listening...";
+};
 
     recognition.onerror = function (event) {
         output.innerText = "Error: " + event.error;
     };
 
-    recognition.onresult = function (event) {
+   output.innerText = "⚡ Processing command...";{
         const text = event.results[0][0].transcript.toLowerCase();
         output.innerText = "You said: " + text;
 
