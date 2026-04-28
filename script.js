@@ -1,5 +1,11 @@
 function startListening() {
     const output = document.getElementById("output");
+    const history = document.getElementById("history");
+
+const li = document.createElement("li");
+li.innerText = "You: " + text + " | AI: " + reply;
+
+history.appendChild(li);
 
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
