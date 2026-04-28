@@ -1,3 +1,3 @@
 function startListening() {
-    alert("Button working!");
+    alert("Working!");
 }
