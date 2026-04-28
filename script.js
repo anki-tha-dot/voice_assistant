@@ -14,6 +14,20 @@ history.appendChild(li);
         return;
     }
 
+
+function addToHistory(text) {
+    let li = document.createElement("li");
+    li.innerText = text;
+    document.getElementById("history").appendChild(li);
+}
+
+
+
+function speak(text) {
+    document.getElementById("output").innerText = text;
+
+    addToHistory(text);
+}
     const recognition = new SpeechRecognition();
     recognition.start();
 
